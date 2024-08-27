@@ -1,0 +1,26 @@
+public class Main {
+
+	public static void main(String[] args) {
+
+		
+		int x = 8;
+		int y = 4;
+		int R;
+		
+		
+		R = x + y;
+		System.out.println("A Soma de R é:" + R);
+		
+		R = x - y;
+		System.out.println("A subtração de R é:" + R);
+		
+		R = x * y;
+		System.out.println("A Multiplicação de R é: " + R);
+		
+		R = x / y;
+		System.out.println("A divisão de R é:" + R);
+		
+	
+	}
+
+}
