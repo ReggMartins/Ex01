@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		int codigo, quant;
+		String desc;
+		double preco=0, total;
+		
+		System.out.println();
+		System.out.println("CÓDIGO  -   DESCRIÇÃO         -    VALOR");
+		System.out.println(" 01     -   Hot Dog           -    R$ 3,00");
+		System.out.println(" 02     -   Refrigerante      -    R$ 4,00");
+		System.out.println(" 03     -   Salgado           -    R$ 2,00");
+		System.out.println();
+						
+		
+		
+		System.out.print("Informe o código do item: ");
+		codigo = sc.nextInt();
+		
+		System.out.print("Informe a quantidade: ");
+		quant = sc.nextInt();
+		
+		
+				
+		if (codigo == 1) {
+			System.out.print("Código = "+ codigo +" Hot Dog  ");
+			System.out.println("Quantidade = " + quant);
+			preco = 3.00;
+			total = preco * quant;
+			System.out.println("Valor Unitário = R$ 3.00");
+			System.out.println("Total = "+ total);
+						
+		}
+		else if (codigo == 2) {
+			System.out.print("Código = "+ codigo +" Refrigerante  ");
+			System.out.println("Quantidade = " + quant);
+			preco = 4.00;
+			total = preco * quant;
+			System.out.println("Valor Unitário = R$ 4.00");
+			System.out.println("Total = "+ total);
+		}
+		else {
+			System.out.print("Código = "+ codigo +" Salgado  ");
+			System.out.println("Quantidade = " + quant);
+			preco = 2.00;
+			total = preco * quant;
+			System.out.println("Valor Unitário = R$ 2.00");
+			System.out.println("Total = "+ total);
+		}
+		
+		
+	
+		sc.close();
+	
+	}
+
+}
